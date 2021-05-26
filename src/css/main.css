@@ -65,6 +65,12 @@ button {
   text-transform: uppercase;
 }
 
+.button {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
 .businesses__container {
   height: 100%;
   display: -webkit-box;
@@ -147,6 +153,11 @@ button {
 
 .businesses .business__contact {
   line-height: 1.2;
+}
+
+.businesses .business__contact a {
+  text-decoration: none;
+  color: inherit;
 }
 
 .businesses .business__contact > div:not(:last-child) {
