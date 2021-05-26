@@ -1,0 +1,163 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  font-family: "Poppins";
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+button {
+  outline: none;
+  border: none;
+  font-family: "Poppins";
+}
+
+.stars-outer {
+  position: relative;
+  display: inline-block;
+}
+
+.stars-outer::before {
+  content: "\f005 \f005 \f005 \f005 \f005";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  color: #768877;
+}
+
+.stars-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0;
+}
+
+.stars-inner::before {
+  content: "\f005 \f005 \f005 \f005 \f005";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  color: #f8ce0b;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 100%;
+  text-transform: uppercase;
+}
+
+.businesses__container {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #444;
+}
+
+.businesses__container button {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.businesses {
+  padding: 20px;
+  grid-gap: 20px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.businesses .business {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.businesses .business__details {
+  margin-bottom: 20px;
+}
+
+.businesses .business__details > div {
+  margin-bottom: 20px;
+}
+
+.businesses .business__services, .businesses .business__location, .businesses .business__contact--phone, .businesses .business__contact--email, .businesses .business__contact--website {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.businesses .business__services i, .businesses .business__location i, .businesses .business__contact--phone i, .businesses .business__contact--email i, .businesses .business__contact--website i {
+  margin-right: 20px;
+}
+
+.businesses .business__contact--phone {
+  font-family: monospace;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+.businesses .business__contact--website {
+  font-weight: 500;
+}
+
+.businesses .business__contact--website a {
+  text-decoration: none;
+}
+
+.businesses .business__name {
+  font-size: 2rem;
+}
+
+.businesses .business__location {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 700;
+  line-height: 1;
+  font-size: 85%;
+}
+
+.businesses .business button {
+  font-size: 75%;
+  border-radius: 5px;
+  background-color: #444;
+  color: #fff;
+}
+
+main {
+  height: 100%;
+  min-height: 100vh;
+  background-color: #888;
+}
+/*# sourceMappingURL=main.css.map */
