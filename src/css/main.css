@@ -121,7 +121,14 @@ button {
   margin-bottom: 20px;
 }
 
-.businesses .business__services, .businesses .business__location, .businesses .business__contact--phone, .businesses .business__contact--email, .businesses .business__contact--website {
+.businesses .business__description {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #152b41;
+  line-height: 1.4;
+}
+
+.businesses .business__services, .businesses .business__location, .businesses .business__contact--phone, .businesses .business__contact--email, .businesses .business__contact--website, .businesses .business__rating {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -130,18 +137,26 @@ button {
           align-items: center;
 }
 
-.businesses .business__services i, .businesses .business__location i, .businesses .business__contact--phone i, .businesses .business__contact--email i, .businesses .business__contact--website i {
+.businesses .business__services > *:first-child, .businesses .business__location > *:first-child, .businesses .business__contact--phone > *:first-child, .businesses .business__contact--email > *:first-child, .businesses .business__contact--website > *:first-child, .businesses .business__rating > *:first-child {
   margin-right: 20px;
 }
 
-.businesses .business__services > div, .businesses .business__location > div, .businesses .business__contact--phone > div, .businesses .business__contact--email > div, .businesses .business__contact--website > div {
+.businesses .business__services > div, .businesses .business__location > div, .businesses .business__contact--phone > div, .businesses .business__contact--email > div, .businesses .business__contact--website > div, .businesses .business__rating > div {
   word-break: break-all;
 }
 
+.businesses .business__contact {
+  line-height: 1.2;
+}
+
+.businesses .business__contact > div:not(:last-child) {
+  margin-bottom: 10px;
+}
+
 .businesses .business__contact--phone {
-  font-family: monospace;
-  font-size: 18px;
-  font-weight: 500;
+  font-size: 85%;
+  font-weight: 700;
+  color: #312c3f;
   letter-spacing: 2px;
 }
 
@@ -151,6 +166,12 @@ button {
 
 .businesses .business__contact--website a {
   text-decoration: none;
+}
+
+.businesses .business__services {
+  font-size: 85%;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 .businesses .business__name {
@@ -166,13 +187,23 @@ button {
   font-weight: 700;
   line-height: 1;
   font-size: 85%;
+  color: #343d2a;
+}
+
+.businesses .business__rating--count {
+  font-size: 75%;
+  font-weight: 700;
+  opacity: 0.7;
 }
 
 .businesses .business button {
-  font-size: 75%;
+  font-size: 85%;
   border-radius: 5px;
   background-color: #444;
+  letter-spacing: 2px;
   color: #fff;
+  width: 100%;
+  margin-top: 20px;
 }
 
 header {
