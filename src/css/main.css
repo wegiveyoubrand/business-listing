@@ -72,6 +72,7 @@ button {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding-bottom: 20px;
   background-color: #444;
 }
 
@@ -91,9 +92,14 @@ button {
 }
 
 .businesses .business {
+  position: relative;
+  overflow: hidden;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   background-color: #fff;
   padding: 40px;
   border-radius: 5px;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -115,10 +121,17 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .businesses .business__services i, .businesses .business__location i, .businesses .business__contact--phone i, .businesses .business__contact--email i, .businesses .business__contact--website i {
   margin-right: 20px;
+}
+
+.businesses .business__services > div, .businesses .business__location > div, .businesses .business__contact--phone > div, .businesses .business__contact--email > div, .businesses .business__contact--website > div {
+  word-break: break-all;
 }
 
 .businesses .business__contact--phone {
@@ -153,6 +166,11 @@ button {
   border-radius: 5px;
   background-color: #444;
   color: #fff;
+}
+
+header {
+  height: 10%;
+  background-color: #222;
 }
 
 main {
