@@ -273,12 +273,28 @@ button {
   margin-top: 20px;
 }
 
-.business__logo {
-  height: 100px;
-  width: 100px;
+.business .tab_1 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 100px 1fr;
+      grid-template-columns: 100px 1fr;
+  grid-gap: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.business__logo img {
+.business .logo {
+  position: relative;
+  width: 100%;
+  height: 100px;
+  overflow: hidden;
+}
+
+.business .logo img {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -290,35 +306,23 @@ button {
   font-size: 1.5rem;
 }
 
-.business__summary {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.business__summary > div:first-child {
-  margin-right: 20px;
-}
-
-.business__summary > div > div {
+.business .tab_2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-top: 5px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  padding-left: 120px;
+  padding-top: 6px;
   padding-right: 6px;
 }
 
-.business__summary > div > div i {
+.business .tab_2 i {
   opacity: 0.3;
 }
 
-.business__summary > div > div i:not(:last-child) {
+.business .tab_2 i:not(:last-child) {
   margin-right: 20px;
 }
 
