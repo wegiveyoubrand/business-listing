@@ -313,7 +313,6 @@ button {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-left: 120px;
   padding-top: 6px;
   padding-right: 6px;
 }
