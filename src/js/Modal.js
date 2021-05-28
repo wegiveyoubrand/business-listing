@@ -4,7 +4,7 @@ const body = document.querySelector("body");
 const Modal = document.querySelector("#modal");
 const ModalTriggers = document.querySelectorAll(".modal-trigger");
 
-const ModalClosers = document.querySelectorAll(".modal__control--close");
+const ModalClosers = document.querySelectorAll("#modalControlClose");
 
 let ModalIsactive = 0;
 
@@ -31,3 +31,9 @@ function setBodyPosition() {
     body.classList.remove("fixed");
   }
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+  ModalIsactive = 1;
+  setBodyPosition();
+  Modal.classList.add("active");
+});
