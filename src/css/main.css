@@ -127,20 +127,62 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
 }
 
 .company > div > div {
+  width: auto;
+}
+
+.company > div > div i {
   cursor: pointer;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
-.company > div > div:hover {
+.company > div > div i:hover {
   opacity: 0.7;
 }
 
 .company > div > div:first-child {
   margin-right: 20px;
+}
+
+.options {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding: 20px;
+  background-color: #fff;
+  color: blue;
+  font-weight: bold;
+  z-index: 500;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transform-origin: top;
+          transform-origin: top;
+  border-radius: 5px;
+}
+
+.options .close-options {
+  cursor: pointer;
+  color: red;
+}
+
+.options.active {
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
 
 .businesses__container {
@@ -168,8 +210,8 @@ button {
   grid-gap: 20px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  -ms-grid-columns: (minmax(320px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
