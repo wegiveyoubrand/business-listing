@@ -123,6 +123,26 @@ button {
   transition: 0.3s ease-in-out;
 }
 
+.company > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.company > div > div {
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.company > div > div:hover {
+  opacity: 0.7;
+}
+
+.company > div > div:first-child {
+  margin-right: 20px;
+}
+
 .businesses__container {
   height: 100%;
   display: -webkit-box;
@@ -407,7 +427,7 @@ header {
   top: 0;
   height: auto;
   background-color: #17145e;
-  padding: 10px 20px 5px;
+  padding: 5px 20px 15px;
   color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
