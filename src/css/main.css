@@ -230,7 +230,6 @@ button {
   padding: 20px;
   border-radius: 5px;
   width: 100%;
-  cursor: pointer;
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
   display: -webkit-box;
@@ -398,10 +397,17 @@ button {
 
 .business .tab_2 i {
   opacity: 0.3;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
 }
 
 .business .tab_2 i:not(:last-child) {
   margin-right: 20px;
+}
+
+.business .tab_2 i:hover {
+  opacity: 1;
 }
 
 .modal {
