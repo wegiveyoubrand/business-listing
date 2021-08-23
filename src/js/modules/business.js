@@ -7,7 +7,7 @@ const registeredBusinesses = [
     logo: `${imageUrl}/appheart.png`,
     description:
       "Proferring creative solutions using state-of-art technologies, towards discovering happiness ❣",
-    website: "https://www.appheartafrica.netlify.app",
+    website: "https://appheartafrica.netlify.app",
     rating: 234,
   },
   {
@@ -15,7 +15,7 @@ const registeredBusinesses = [
     logo: `${imageUrl}/DataXpressLogo.png`,
     description:
       "Your top Professional Data Solution and Delivery Company with the right certified team of professionals in orienting Data solutions.",
-    website: "https://www.dataxpressprofessionals.com",
+    website: "https://dataxpressprofessionals.com",
     rating: 176,
   },
   {
@@ -23,7 +23,7 @@ const registeredBusinesses = [
     logo: `${imageUrl}/ogbsports.png`,
     description:
       "The No. 1 sports clothing company with the goal of delivering authentic wears, sneakers and accessories to you as our only priority in our hearts.",
-    website: "https://www.ogbsports.netlify.app",
+    website: "https://ogbsports.netlify.app",
     rating: 89,
   },
 ];
