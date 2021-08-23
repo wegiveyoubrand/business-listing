@@ -32,8 +32,8 @@ function setBodyPosition() {
   }
 }
 
-document.addEventListener("DOMContentLoaded", () => {
-  ModalIsactive = 1;
-  setBodyPosition();
-  Modal.classList.add("active");
-});
+// document.addEventListener("DOMContentLoaded", () => {
+//   ModalIsactive = 1;
+//   setBodyPosition();
+//   Modal.classList.add("active");
+// });
