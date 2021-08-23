@@ -11,7 +11,7 @@ const registeredBusinesses = [
     rating: 234,
   },
   {
-    name: "DataX",
+    name: "DataXpress",
     logo: `${imageUrl}/DataXpressLogo.png`,
     description:
       "Your top Professional Data Solution and Delivery Company with the right certified team of professionals in orienting Data solutions.",
